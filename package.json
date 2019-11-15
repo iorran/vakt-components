@@ -1,7 +1,9 @@
 {
   "name": "vakt-components",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.1",
+  "publishConfig": {
+    "registry": "http://localhost:7000/repository/npm-private/"
+  },
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.7",
