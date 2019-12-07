@@ -29,7 +29,8 @@ module.exports = {
         args: 'after-used',
         ignoreRestSiblings: false
       }
-    ]
+    ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.test.tsx', '**/*.stories.ts', '**/*.stories.tsx'] }]
   },
   settings: {
     'import/parsers': {
