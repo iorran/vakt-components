@@ -8,10 +8,6 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
-  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -19,9 +15,21 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
+  },
   rules: {
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }]
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: false
+      }
+    ]
   },
   settings: {
     'import/parsers': {
