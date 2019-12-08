@@ -58,7 +58,7 @@ const ButtonBase: React.FunctionComponent<ButtonProps> = styled.button<ButtonPro
 /**
  * Basic Button
  */
-export const Button: React.FunctionComponent<ButtonProps> = styled(ButtonBase)`
+const Button: React.FunctionComponent<ButtonProps> = styled(ButtonBase)`
   ${p => getTheme(p)}
   ${p => getSize(p)}
 `;

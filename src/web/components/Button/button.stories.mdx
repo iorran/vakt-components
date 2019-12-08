@@ -1,0 +1,49 @@
+import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import Button from 'web/components/Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+### Default Values
+
+When no props is supplied, Button displays initials.
+
+<Preview withToolbar>
+  <Story name="Default">
+    <Button>Standard</Button>
+  </Story>
+</Preview>
+
+<Props of={Button} />
+
+### Sizes
+
+4 sizes are supported.
+
+<Preview withToolbar>
+  <Story name="Small">  
+    <Button small> Small </Button> 
+  </Story>
+  <Story name="Medium">   
+    <Button medium> Medium </Button> 
+  </Story>
+  <Story name="Large">    
+    <Button large> Large </Button>  
+  </Story>
+</Preview>
+
+### Playground
+
+Experiment with this story with Knobs addon in Canvas mode.
+
+<Story name="knobs" parameters={{ decorators: [withKnobs] }}>
+  <Button
+    primary={boolean('primary', false, 'theme')}
+    secondary={boolean('secondary', false, 'theme')}
+    default={boolean('default', false, 'theme')}
+  >
+    Empty
+  </Button>
+</Story>
