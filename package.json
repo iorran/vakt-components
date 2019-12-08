@@ -3,6 +3,12 @@
   "version": "0.1.0-alpha",
   "license": "MIT",
   "homepage": "vakt-components",
+  "repository": "https://github.com/iorran/vakt-components.git",
+  "author": "Iorran Castro <iorranpt@gmail.com>",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -96,8 +102,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "main": "index.js",
-  "repository": "https://github.com/iorran/vakt-components.git",
-  "author": "Iorran Castro <iorran.castro@vakt.io>"
+  }
 }
