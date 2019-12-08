@@ -1,4 +1,7 @@
 export default interface ButtonProps {
+  /**
+   * Set theme as primary
+   */
   primary?: boolean;
   secondary?: boolean;
   default?: boolean;
