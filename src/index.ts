@@ -5,4 +5,4 @@ import * as icons from './shared/styles/icon';
 
 export { color, global, animation, icons };
 
-export { default } from 'web/components/Button';
+export { default as Button } from './web/components/Button';
