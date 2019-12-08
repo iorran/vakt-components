@@ -1,4 +1,4 @@
-export default interface ButtonProps {
+export default interface IButton {
   /**
    * Set theme as primary
    */

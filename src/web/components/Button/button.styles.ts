@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 import color from 'shared/styles/color';
-import ButtonProps from './button.model';
+import IButton from './Button.interface';
 
-function getSize({ small, medium, large }: ButtonProps) {
+function getSize({ small, medium, large }: IButton) {
   const sizeLarge = css`
     height: 40px;
     padding: 0px 32px;
@@ -23,7 +23,7 @@ function getSize({ small, medium, large }: ButtonProps) {
   return isSmall || isMedium || isLarge || any;
 }
 
-function getTheme({ primary, secondary, default: normal, outlined }: ButtonProps) {
+function getTheme({ primary, secondary, default: normal, outlined }: IButton) {
   const themePrimary = css`
     background: ${outlined ? color.transparent : color.primary} 0% 0% no-repeat padding-box;
     color: ${outlined ? color.primary : color.white};
@@ -47,7 +47,7 @@ function getTheme({ primary, secondary, default: normal, outlined }: ButtonProps
   return isPrimary || isSecondary || isDefault || any;
 }
 
-const ButtonBase: React.FunctionComponent<ButtonProps> = styled.button<ButtonProps>`
+const ButtonBase: React.FunctionComponent<IButton> = styled.button<IButton>`
   border-radius: 4px;
   font-family: 12px 'Helvetica', sans-serif;
   outline: none;
@@ -58,7 +58,7 @@ const ButtonBase: React.FunctionComponent<ButtonProps> = styled.button<ButtonPro
 /**
  * Basic Button
  */
-const Button: React.FunctionComponent<ButtonProps> = styled(ButtonBase)`
+const Button: React.FunctionComponent<IButton> = styled(ButtonBase)`
   ${p => getTheme(p)}
   ${p => getSize(p)}
 `;
