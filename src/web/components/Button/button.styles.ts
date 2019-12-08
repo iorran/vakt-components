@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import color from 'shared/styles/color';
 import IButton from './Button.interface';
+import color from '../../../shared/styles/color';
 
 function getSize({ small, medium, large }: IButton) {
   const sizeLarge = css`
