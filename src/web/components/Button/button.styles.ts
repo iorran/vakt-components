@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import color from 'web/styles/colors';
+import color from 'shared/styles/color';
 import ButtonProps from './button.model';
 
 function getSize({ small, medium, large }: ButtonProps) {
@@ -63,4 +63,4 @@ const Button: React.FunctionComponent<ButtonProps> = styled(ButtonBase)`
   ${p => getSize(p)}
 `;
 
-export default Button;
+export { Button as default };

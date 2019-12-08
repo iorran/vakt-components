@@ -14,38 +14,25 @@
       "git add"
     ]
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "BABEL_ENV=production babel src -d dist",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --app-code=yn7sqg5vy2",
+    "build-storybook-docs": "build-storybook -s public --docs"
+  },
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "source-map-explorer": "^2.1.2",
     "styled-components": "^4.4.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --app-code=yn7sqg5vy2"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
     "@storybook/addon-a11y": "^5.2.8",
     "@storybook/addon-actions": "^5.2.8",
@@ -63,6 +50,7 @@
     "@types/styled-components": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "auto": "^7.17.0",
     "babel-loader": "^8.0.6",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
@@ -85,5 +73,28 @@
     "stylelint-processor-styled-components": "^1.9.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
-  }
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "repository": "https://github.com/iorran/vakt-components.git",
+  "author": "Iorran Castro <iorran.castro@vakt.io>"
 }
