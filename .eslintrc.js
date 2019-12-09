@@ -30,7 +30,10 @@ module.exports = {
         ignoreRestSiblings: false
       }
     ],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.test.tsx', '**/*.stories.ts', '**/*.stories.tsx'] }]
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['**/*.test.ts', '**/*.test.tsx', '**/*.stories.ts', '**/*.stories.tsx'] }
+    ]
   },
   settings: {
     'import/parsers': {
@@ -47,6 +50,7 @@ module.exports = {
   },
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    jest: true
   }
 };
