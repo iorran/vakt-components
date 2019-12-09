@@ -32,10 +32,18 @@
     "build-storybook-docs": "build-storybook -s public --docs"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "source-map-explorer": "^2.1.2",
-    "styled-components": "^4.4.1"
+    "react-scripts": "3.3.0",
+    "typescript": "~3.7.3",
+    "@types/styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",
@@ -50,11 +58,6 @@
     "@storybook/addons": "^5.2.8",
     "@storybook/preset-typescript": "^1.1.0",
     "@storybook/react": "^5.2.8",
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.14",
-    "@types/react": "^16.9.15",
-    "@types/react-dom": "^16.9.4",
-    "@types/styled-components": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
     "auto": "^7.17.0",
@@ -69,19 +72,20 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.4",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-is": "^16.12.0",
-    "react-scripts": "^3.3.0",
+    "react-test-renderer": "^16.12.0",
     "storybook-chromatic": "^3.4.1",
+    "styled-components": "^4.4.1",
     "stylelint": "^12.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.9.0",
     "ts-jest": "^24.2.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.3"
+    "ts-loader": "^6.2.1"
   },
   "babel": {
     "presets": [
