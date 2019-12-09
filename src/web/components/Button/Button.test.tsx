@@ -1,8 +1,23 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import Button from './Button.styles';
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
+import 'jest-styled-components';
+import Button from './index';
 
-it('renders learn react link', () => {
-  expect(1).toBe(1);
-  // const { getByText } = render(<Button onClick={() => {}}>2</Button>);
+afterEach(cleanup);
+
+const onClick = jest.fn();
+
+describe('Button', () => {
+  it('should render primary button', () => {
+    const { container } = render(<Button onClick={onClick}>Button</Button>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+  it('should render sencondary button', () => {
+    const { container } = render(
+      <Button secondary onClick={onClick}>
+        Button
+      </Button>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
