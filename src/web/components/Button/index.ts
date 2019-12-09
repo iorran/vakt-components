@@ -1,1 +1,3 @@
-export { default } from './Button.styles';
+import Button from './Button.styles';
+
+export default Button;

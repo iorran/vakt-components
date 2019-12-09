@@ -63,4 +63,4 @@ const Button: React.FunctionComponent<IButton> = styled(ButtonBase)`
   ${p => getSize(p)}
 `;
 
-export { Button as default };
+export default Button;

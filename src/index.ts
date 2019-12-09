@@ -3,6 +3,6 @@ import * as color from './shared/styles/color';
 import * as animation from './shared/styles/animation';
 import * as icons from './shared/styles/icon';
 
-export { color, global, animation, icons };
+import Button from './web/components/Button';
 
-export { default as Button } from './web/components/Button';
+export { color, global, animation, icons, Button };
