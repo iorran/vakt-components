@@ -1,6 +1,6 @@
 {
-  "name": "vakt-components-test",
-  "version": "0.1.4-alpha",
+  "name": "vakt-components",
+  "version": "0.1.0-alpha",
   "license": "MIT",
   "homepage": "vakt-components",
   "repository": "https://github.com/iorran/vakt-components.git",
