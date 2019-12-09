@@ -7,7 +7,6 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "jsx": "react",
     "lib": ["dom", "es2017", "es5", "es6", "es7"],
     "module": "esnext",
